@@ -1,8 +1,11 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { log } from 'util';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+
+console.log("Dit is een test " + environment.test);
 
 if (environment.production) {
   enableProdMode();
